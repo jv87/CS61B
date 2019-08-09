@@ -10,7 +10,7 @@
             * factor is a constant multiplicative that we use for resizing
  * @3:30 PM
  */
-public class ArrayDequeJeff<Item> implements Deque<Item>{
+public class ArrayDeque<Item> implements Deque<Item>{
     private Item[] items;
     private int nextFirst;
     private int nextLast;
@@ -20,7 +20,7 @@ public class ArrayDequeJeff<Item> implements Deque<Item>{
 
 
     // Empty array constructor
-    public ArrayDequeJeff(){
+    public ArrayDeque(){
         items = (Item[]) new Object[capacity];
         size = 0;
         nextFirst = 3;
@@ -33,7 +33,7 @@ public class ArrayDequeJeff<Item> implements Deque<Item>{
      objects, i.e. if you change other, the new ArrayDeque you created
      should not change as well. */
 
-    public ArrayDequeJeff(ArrayDequeJeff other){
+    public ArrayDeque(ArrayDeque other){
         //STILL NEEDS WORK TO ACCOUNT FOR ARRAYS BIGGER THAN 8 (needs resize)
         System.arraycopy(other,0,items,0,other.items.length);
         size = other.size;
