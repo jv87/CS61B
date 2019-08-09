@@ -42,14 +42,6 @@ public class LinkedListDeque<T> implements Deque<T> {
             return size;
         }
 
-        /** Returns true if deque is empty, false otherwise. */
-        @Override
-        public boolean isEmpty(){
-            if (size == 0){
-                return true;
-            }
-            return false;
-        }
 
         /** Prints the items in the deque from first to last, separated by a space.
          * Once all the items have been printed, print out a new line.

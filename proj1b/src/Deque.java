@@ -18,15 +18,20 @@ public interface  Deque<T> {
     public int size();
 
     /**
-     * returns true if list is empty (hence size == 0)
-     */
-    public boolean isEmpty();
-
-    /**
      * prints the elements in the array from nextFirst to nextLast in order
      */
     public void printDeque();
 
+    /**
+     * returns the element corresponding to the specified index
+     */
     public T get(int index);
+
+    /**
+     * returns true if list is empty (hence size == 0)
+     */
+    default boolean isEmpty(){
+        return size() == 0;
+    }
 
 }

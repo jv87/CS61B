@@ -196,11 +196,6 @@ public class ArrayDeque<Item> implements Deque<Item>{
         return size;
     }
 
-    /** returns true if list is empty (hence size == 0) */
-    @Override
-    public boolean isEmpty(){
-        return size == 0;
-    }
 
     /** prints the elements in the array from nextFirst to nextLast in order */
     @Override
