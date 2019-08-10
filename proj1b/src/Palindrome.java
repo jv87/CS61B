@@ -12,4 +12,7 @@ public class Palindrome {
         }
         return wordChar;
     }
+    public boolean isPalindrome(String word){
+        return true;
+    }
 }
