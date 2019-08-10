@@ -13,6 +13,17 @@ public class Palindrome {
         return wordChar;
     }
     public boolean isPalindrome(String word){
-        return true;
+        Deque<Character> wordArr = wordToDeque(word);
+
+        return palindromeCheck(wordArr);
+    }
+    private boolean palindromeCheck(Deque<Character> wordArr){
+        if (wordArr.size() == 1 || wordArr.size() == 0){
+            return true;
+        }
+        if (wordArr.removeFirst() == wordArr.removeLast()){
+            return palindromeCheck(wordArr);
+        }
+        return false;
     }
 }

@@ -35,7 +35,9 @@ public class ArrayDeque<Item> implements Deque<Item>{
 
     public ArrayDeque(ArrayDeque other){
         //STILL NEEDS WORK TO ACCOUNT FOR ARRAYS BIGGER THAN 8 (needs resize)
-        System.arraycopy(other,0,items,0,other.items.length);
+        Item[] temp = (Item[]) new Object[other.items.length];
+        items = temp;
+        System.arraycopy(other.items,0,items,0,other.items.length);
         size = other.size;
         nextFirst = other.nextFirst;
         nextLast = other.nextLast;
