@@ -30,9 +30,19 @@ public class TestPalindrome {
         Assert.assertFalse(palindrome.isPalindrome("rancor"));
         Assert.assertFalse(palindrome.isPalindrome("aaaaab"));
 
-
-
-
-
     }
+    @Test
+    public void testIspalindromeOverload(){
+        CharacterComparator offByOne = new OffByOne();
+        Assert.assertTrue(palindrome.isPalindrome("noon",offByOne));
+        Assert.assertTrue(palindrome.isPalindrome("moon", offByOne));
+        Assert.assertTrue(palindrome.isPalindrome("aaaaab", offByOne));
+
+        Assert.assertFalse(palindrome.isPalindrome("toon", offByOne));
+        Assert.assertFalse(palindrome.isPalindrome("horse", offByOne));
+        Assert.assertFalse(palindrome.isPalindrome("rancor", offByOne));
+    }
+
+
+
 }  //   Uncomment this class once you've created your Palindrome class. */
