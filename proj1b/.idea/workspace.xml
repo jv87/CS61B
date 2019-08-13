@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba7e4fba-faea-4aa7-af0b-473c4934c7d3" name="Default Changelist" comment="Renamed ArrayDequeJeff to ArrayDeque">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/data/.gitkeep" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/data/proj2c_imgs/d0_x0_y0.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/data/proj2c_imgs/d1_x0_y0.png" afterDir="false" />
@@ -21859,9 +21858,6 @@
       <change afterPath="$PROJECT_DIR$/src/data/proj2c_xml/tiny-clean.osm.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/data/words.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ArrayDeque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArrayDeque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Deque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Deque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LinkedListDeque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinkedListDeque.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="src/data/" />
@@ -21907,8 +21903,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Deque.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="95">
+              <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
               <folding>
                 <element signature="e#601#602#0" expanded="true" />
                 <element signature="e#635#636#0" expanded="true" />
@@ -21976,12 +21972,6 @@
               <item name="proj1b" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="proj1b" type="b2602c69:ProjectViewProjectNode" />
-              <item name="proj1b" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -22047,7 +22037,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565390803826</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Made isEmpty default in the Deque interface">
+      <created>1565394591957</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1565394591957</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -22059,11 +22056,11 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Event Log" side_tool="true" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Style Checker" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -22115,7 +22112,8 @@
     <MESSAGE value="arranging project files and folders" />
     <MESSAGE value="added DEQUE files" />
     <MESSAGE value="Renamed ArrayDequeJeff to ArrayDeque" />
-    <option name="LAST_COMMIT_MESSAGE" value="Renamed ArrayDequeJeff to ArrayDeque" />
+    <MESSAGE value="Made isEmpty default in the Deque interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made isEmpty default in the Deque interface" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/CharacterComparator.java">
@@ -22148,8 +22146,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Deque.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="95">
+          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
           <folding>
             <element signature="e#601#602#0" expanded="true" />
             <element signature="e#635#636#0" expanded="true" />
