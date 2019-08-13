@@ -14,6 +14,13 @@ public class LinkedListDeque<T> implements Deque<T> {
                 item = i;
                 next = n;
             }
+            public void setNext(node next) {
+                this.next = next;
+            }
+
+            public void setPrev(node prev) {
+                this.prev = prev;
+            }
         }
 
         private node sentinal;
@@ -34,6 +41,18 @@ public class LinkedListDeque<T> implements Deque<T> {
             sentinal.prev = sentinal;
             sentinal.next = sentinal;
             size = 0;
+        }
+
+        /** deep copy constructor */
+        public LinkedListDeque(LinkedListDeque other){
+            sentinal = new node(null, null, null);
+            sentinal.setNext(sentinal);
+            sentinal.setPrev(sentinal);
+            for (int i = 0; i < other.size; i++) {
+                T item = (T) other.get(i);
+                this.addLast(item);
+            }
+            this.size = other.size();
         }
 
         /** Returns the number of items in the deque. */
