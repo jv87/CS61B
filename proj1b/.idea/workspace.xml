@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66533159-137f-479b-bd2c-2c92a31037d0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OffByN.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TestOffByN.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -104,8 +102,8 @@
       <file leaf-file-name="TestOffByN.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TestOffByN.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+            <state relative-caret-position="210">
+              <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -466,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565674297946</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added OffByN class&#10;completed project">
+      <created>1565674999027</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1565674999027</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -599,7 +604,8 @@
     <MESSAGE value="added isPalindrome" />
     <MESSAGE value="added deep copy to LinkedList, Fix deep copy to ArrayDeque, and fix isPalindrome method." />
     <MESSAGE value="added overload method to palindrome class (isPalindrome).&#10;fixed bug in removeLast ( removing the 0ths element in the list didn't loop back to the end of the list) &#10;Applied same loop fix to removeFirst as a preventative measure." />
-    <option name="LAST_COMMIT_MESSAGE" value="added overload method to palindrome class (isPalindrome).&#10;fixed bug in removeLast ( removing the 0ths element in the list didn't loop back to the end of the list) &#10;Applied same loop fix to removeFirst as a preventative measure." />
+    <MESSAGE value="added OffByN class&#10;completed project" />
+    <option name="LAST_COMMIT_MESSAGE" value="added OffByN class&#10;completed project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -739,8 +745,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TestOffByN.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        <state relative-caret-position="210">
+          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
