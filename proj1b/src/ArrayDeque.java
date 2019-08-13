@@ -47,9 +47,14 @@ public class ArrayDeque<Item> implements Deque<Item>{
         return nextFirst == nextLast;
     }
 
-    // if nextFirst points the the back of the list
+    // if nextFirst or nextLast is negative it loops to the back of the list accordingly
     private void loopBack(){
+        if(nextFirst < 0){
             nextFirst = items.length - 1;
+        }
+        if(nextLast < 0){
+            nextLast = items.length - 1;
+        }
     }
     // checks if array is full
     private boolean isFull(){
@@ -76,8 +81,12 @@ public class ArrayDeque<Item> implements Deque<Item>{
 
     // loops to the front of the list
     private void loopFoward(){
-        nextLast = 0;
-        //pointerCheck();
+        if(nextLast == items.length){
+            nextLast = 0;
+        }
+        if(nextFirst == items.length){
+            nextFirst = 0;
+        }
     }
 
     // adds item to the end of the list */
@@ -122,6 +131,8 @@ public class ArrayDeque<Item> implements Deque<Item>{
         if (items.length > 16 && (size * 100)/items.length < 25){
             shrink();
         }
+        loopFoward();
+        loopBack();
         Item elem = items[nextFirst];
         return elem;
 
@@ -141,6 +152,8 @@ public class ArrayDeque<Item> implements Deque<Item>{
         if (items.length > 16 && (size * 100)/items.length < 25){
             shrink();
         }
+        loopBack();
+        loopFoward();
         Item elem = items[nextLast];
         return elem;
     }

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66533159-137f-479b-bd2c-2c92a31037d0" name="Default" comment="added isPalindrome">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="66533159-137f-479b-bd2c-2c92a31037d0" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -57,11 +56,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TestPalindrome.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="6" column="57" lean-forward="true" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -93,19 +101,37 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>loop</find>
+      <find>remov</find>
+      <find>offByOne</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/TestPalindrome.java" />
         <option value="$PROJECT_DIR$/src/ArrayDequeTest.java" />
         <option value="$PROJECT_DIR$/src/LinkedListDeque.java" />
-        <option value="$PROJECT_DIR$/src/ArrayDeque.java" />
+        <option value="$PROJECT_DIR$/src/PalindromeFinder.java" />
+        <option value="$PROJECT_DIR$/src/TestOffByOne.java" />
+        <option value="$PROJECT_DIR$/src/OffByOne.java" />
+        <option value="$PROJECT_DIR$/src/TestPalindrome.java" />
         <option value="$PROJECT_DIR$/src/Palindrome.java" />
+        <option value="$PROJECT_DIR$/src/ArrayDeque.java" />
+        <option value="$PROJECT_DIR$/src/OffByN.java" />
+        <option value="$PROJECT_DIR$/src/TestOffByN.java" />
       </list>
     </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="866" />
+    <option name="y" value="-10" />
+    <option name="width" value="976" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -160,7 +186,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestPalindrome">
+  <component name="RunManager" selected="JUnit.TestOffByN.testequalChar">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -169,16 +195,6 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ArrayDequeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="proj1b" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ArrayDequeTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -194,32 +210,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestPalindrome" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestOffByN.testequalChar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proj1b" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestPalindrome" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestPalindrome.testWordToDeque" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="proj1b" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestPalindrome" />
-      <option name="METHOD_NAME" value="testWordToDeque" />
+      <option name="MAIN_CLASS_NAME" value="TestOffByN" />
+      <option name="METHOD_NAME" value="testequalChar" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestPalindrome.testisPalindrome" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestOffByOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj1b" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestOffByOne" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestOffByOne.testequalChar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj1b" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestOffByOne" />
+      <option name="METHOD_NAME" value="testequalChar" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestPalindrome.testIspalindromeOverload" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proj1b" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestPalindrome" />
-      <option name="METHOD_NAME" value="testisPalindrome" />
+      <option name="METHOD_NAME" value="testIspalindromeOverload" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -252,19 +279,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.TestPalindrome" />
-      <item itemvalue="JUnit.TestPalindrome.testWordToDeque" />
-      <item itemvalue="JUnit.TestPalindrome.testisPalindrome" />
-      <item itemvalue="JUnit.ArrayDequeTest" />
+      <item itemvalue="JUnit.TestOffByOne" />
+      <item itemvalue="JUnit.TestOffByOne.testequalChar" />
+      <item itemvalue="JUnit.TestPalindrome.testIspalindromeOverload" />
       <item itemvalue="JUnit.ArrayDequeTest.testDeepCopy" />
+      <item itemvalue="JUnit.TestOffByN.testequalChar" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestPalindrome" />
-        <item itemvalue="JUnit.TestPalindrome.testisPalindrome" />
+        <item itemvalue="JUnit.TestOffByN.testequalChar" />
+        <item itemvalue="JUnit.TestPalindrome.testIspalindromeOverload" />
         <item itemvalue="JUnit.ArrayDequeTest.testDeepCopy" />
-        <item itemvalue="JUnit.ArrayDequeTest" />
-        <item itemvalue="JUnit.TestPalindrome.testWordToDeque" />
+        <item itemvalue="JUnit.TestOffByOne" />
+        <item itemvalue="JUnit.TestOffByOne.testequalChar" />
       </list>
     </recent_temporary>
   </component>
@@ -300,44 +327,64 @@
       <option name="project" value="LOCAL" />
       <updated>1565410321407</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added deep copy to LinkedList, Fix deep copy to ArrayDeque, and fix isPalindrome method.">
+      <created>1565466548111</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1565466548111</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added overload method to palindrome class (isPalindrome).&#10;fixed bug in removeLast ( removing the 0ths element in the list didn't loop back to the end of the list) &#10;Applied same loop fix to removeFirst as a preventative measure.">
+      <created>1565674297946</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1565674297946</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added OffByN class&#10;completed project">
+      <created>1565674999027</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1565674999027</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestPalindrome_testisPalindrome - 2019.08.10 at 12h 22m 00s.xml">
-      <configuration name="TestPalindrome.testisPalindrome" configurationId="JUnit" />
+    <history-entry file="ArrayDequeTest_testDeepCopy - 2019.08.12 at 22h 26m 18s.xml">
+      <configuration name="ArrayDequeTest.testDeepCopy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestPalindrome_testisPalindrome - 2019.08.10 at 12h 22m 14s.xml">
-      <configuration name="TestPalindrome.testisPalindrome" configurationId="JUnit" />
+    <history-entry file="ArrayDequeTest_testDeepCopy - 2019.08.12 at 22h 28m 06s.xml">
+      <configuration name="ArrayDequeTest.testDeepCopy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestPalindrome_testisPalindrome - 2019.08.10 at 12h 22m 22s.xml">
-      <configuration name="TestPalindrome.testisPalindrome" configurationId="JUnit" />
+    <history-entry file="TestOffByN_testequalChar - 2019.08.12 at 22h 39m 04s.xml">
+      <configuration name="TestOffByN.testequalChar" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestPalindrome_testisPalindrome - 2019.08.10 at 12h 24m 31s.xml">
-      <configuration name="TestPalindrome.testisPalindrome" configurationId="JUnit" />
+    <history-entry file="TestOffByN_testequalChar - 2019.08.12 at 22h 42m 07s.xml">
+      <configuration name="TestOffByN.testequalChar" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestPalindrome_testisPalindrome - 2019.08.10 at 12h 24m 46s.xml">
-      <configuration name="TestPalindrome.testisPalindrome" configurationId="JUnit" />
+    <history-entry file="TestOffByN_testequalChar - 2019.08.12 at 22h 42m 18s.xml">
+      <configuration name="TestOffByN.testequalChar" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestPalindrome_testisPalindrome - 2019.08.10 at 12h 45m 07s.xml">
-      <configuration name="TestPalindrome.testisPalindrome" configurationId="JUnit" />
+    <history-entry file="TestOffByN_testequalChar - 2019.08.12 at 22h 42m 26s.xml">
+      <configuration name="TestOffByN.testequalChar" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestPalindrome - 2019.08.12 at 20h 43m 47s.xml">
-      <configuration name="TestPalindrome" configurationId="JUnit" />
+    <history-entry file="TestOffByN_testequalChar - 2019.08.12 at 22h 42m 32s.xml">
+      <configuration name="TestOffByN.testequalChar" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestPalindrome - 2019.08.12 at 20h 44m 19s.xml">
-      <configuration name="TestPalindrome" configurationId="JUnit" />
+    <history-entry file="TestPalindrome_testIspalindromeOverload - 2019.08.12 at 22h 17m 33s.xml">
+      <configuration name="TestPalindrome.testIspalindromeOverload" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestPalindrome - 2019.08.12 at 20h 44m 52s.xml">
-      <configuration name="TestPalindrome" configurationId="JUnit" />
+    <history-entry file="TestPalindrome_testIspalindromeOverload - 2019.08.12 at 22h 17m 43s.xml">
+      <configuration name="TestPalindrome.testIspalindromeOverload" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestPalindrome - 2019.08.12 at 20h 45m 09s.xml">
-      <configuration name="TestPalindrome" configurationId="JUnit" />
+    <history-entry file="TestPalindrome_testIspalindromeOverload - 2019.08.12 at 22h 28m 24s.xml">
+      <configuration name="TestPalindrome.testIspalindromeOverload" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1672" y="-31" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -348,15 +395,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" weight="0.32827735" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.8234019" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32900944" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.6096698" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32827735" />
       <window_info anchor="bottom" id="Style Checker" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010661" side_tool="true" weight="0.32827735" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32900944" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -422,19 +469,36 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="created Palindrome" />
     <MESSAGE value="added wordtoDeque on palindrome and it passed for both LinkedList and ArrayDeque" />
     <MESSAGE value="added isPalindrome" />
-    <option name="LAST_COMMIT_MESSAGE" value="added isPalindrome" />
+    <MESSAGE value="added deep copy to LinkedList, Fix deep copy to ArrayDeque, and fix isPalindrome method." />
+    <MESSAGE value="added overload method to palindrome class (isPalindrome).&#10;fixed bug in removeLast ( removing the 0ths element in the list didn't loop back to the end of the list) &#10;Applied same loop fix to removeFirst as a preventative measure." />
+    <MESSAGE value="added OffByN class&#10;completed project" />
+    <option name="LAST_COMMIT_MESSAGE" value="added OffByN class&#10;completed project" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ArrayDequeTest.java">
+    <entry file="file://$PROJECT_DIR$/src/LinkedListDeque.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="221">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
         </state>
       </provider>
     </entry>
@@ -449,11 +513,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/../../skeleton-sp19-master/library-sp19/javalib/junit-4.12.jar!/org/junit/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ArrayDequeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$PROJECT_DIR$/../../skeleton-sp19-master/library-sp19/javalib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+        <state relative-caret-position="84">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../skeleton-sp19-master/library-sp19/javalib/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="202" selection-start-line="202" selection-end-line="202" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestPalindrome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="57" lean-forward="true" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OffByOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+          <folding>
+            <element signature="e#176#177#0" expanded="true" />
+            <element signature="e#219#220#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PalindromeFinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -464,10 +577,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LinkedListDeque.java">
+    <entry file="file://$PROJECT_DIR$/src/OffByN.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        <state relative-caret-position="533">
+          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+          <folding>
+            <element signature="e#151#152#0" expanded="true" />
+            <element signature="e#172#173#0" expanded="true" />
+            <element signature="e#236#237#0" expanded="true" />
+            <element signature="e#284#285#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestOffByOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="32" column="5" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="32" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -478,10 +607,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TestPalindrome.java">
+    <entry file="file://$PROJECT_DIR$/src/TestOffByN.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="57" lean-forward="true" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
+        <state relative-caret-position="210">
+          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
