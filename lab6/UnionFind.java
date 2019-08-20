@@ -44,8 +44,7 @@ public class UnionFind {
 
     /* Returns true if nodes v1 and v2 are connected. */
     public boolean connected(int v1, int v2) {
-        // TODO
-        return false;
+        return this.tree[v1] == this.tree[v2];
     }
 
     /* Connects two elements v1 and v2 together. v1 and v2 can be any valid 
