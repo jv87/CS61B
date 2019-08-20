@@ -1,6 +1,5 @@
 public class UnionFind {
 
-    // TODO - Add instance variables?
     int[] items;
     int[] tree;
     int[] treesize;
@@ -8,7 +7,8 @@ public class UnionFind {
 
     /* Creates a UnionFind data structure holding n vertices. Initially, all
        vertices are in disjoint sets.
-       ex) items = [0, 1, 2, 3, ..., n-1] // create an array with N accending elements
+
+       EX) items = [0, 1, 2, 3, ..., n-1] // create an array with N accending elements
            tree = [-1, -1,-1,-1, ... ]    // initially each element is its own parent
        treesize =  [1, 1, 1, ...]         // since each element is its own parent all trees have one element
        */
@@ -18,7 +18,7 @@ public class UnionFind {
         this.treesize = new int[n];
         for (int i = 0; i < n; i++){
             items[i] = i;
-            tree[i] = -1;
+            tree[i] = -(i+1);
             treesize[i] = 1;
         }
 
