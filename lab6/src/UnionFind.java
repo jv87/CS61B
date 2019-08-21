@@ -38,8 +38,11 @@ public class UnionFind {
     /* Returns the parent of v1. If v1 is the root of a tree, returns the
        negative size of the tree for which v1 is the root. */
     public int parent(int v1) {
-        // TODO
-        return -1;
+        int guadian = tree[v1];
+        if(guadian < 0){
+            return -treesize[guadian];
+        }
+        return guadian;
     }
 
     /* Returns true if nodes v1 and v2 are connected. */
@@ -58,10 +61,24 @@ public class UnionFind {
     }
 
     /* Returns the root of the set V belongs to. Path-compression is employed
-       allowing for fast search-time. */
+       allowing for fast search-time.
+
+       no joins (hence no ancestor)
+       ex) items --> [0, 1, 2, 3]
+           tree --->[-1,-2,-3,-4]
+      0,1,3 joins (3 has its ancestor which is 0 and a parent which is 1)
+       ex) items --> [0, 1, 2, 3]
+           tree --->[-1,0,-3,1]
+
+       */
     public int find(int vertex) {
-        // TODO
-        return -1;
+        int ancestor = tree[vertex]; // ancestor == root which are identified with negative number
+        int guardian = items[ancestor];
+        while(ancestor > 0){
+            ancestor = parent(ancestor);
+            guardian = items[ancestor];
+        }
+        return guardian;
     }
 
 }

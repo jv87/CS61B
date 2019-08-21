@@ -45,7 +45,7 @@ public class UnionFindTest {
     public void findTest(){
         UnionFind set = new UnionFind(10);
         int firstChild = 0;
-        int parent = set.find()
+        int parent = set.find();
 
     }
 
