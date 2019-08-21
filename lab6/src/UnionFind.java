@@ -53,7 +53,8 @@ public class UnionFind {
        vertex with itself or vertices that are already connected should not 
        change the sets but may alter the internal structure of the data. */
     public void union(int v1, int v2) {
-        // TODO
+        // simply connect two parents to one parent
+
     }
 
     /* Returns the root of the set V belongs to. Path-compression is employed
