@@ -76,7 +76,12 @@ public class UnionFindTest {
     @Test
     public void unionTest(){
         UnionFind set = new UnionFind(10);
-        int familySize1 = set.sizeOf(0);
+        boolean related = set.connected(0,1); // should be false at first
+        Assert.assertFalse(related);
+        // creating a child
+        set.union(0,1);
+        related = set.connected(0,1);
+        Assert.assertTrue(related);
 
 
     }

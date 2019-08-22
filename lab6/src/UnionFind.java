@@ -47,7 +47,7 @@ public class UnionFind {
     public int parent(int v1) {
         int guardianIndex = tree[v1]; // if guardian index is negative then v1 is a root
         if(guardianIndex < 0){
-            return -treesize[guardianIndex];
+            return -treesize[v1];
         }
         int guardian = items[guardianIndex];
         return guardian;
@@ -55,7 +55,9 @@ public class UnionFind {
 
     /* Returns true if nodes v1 and v2 are connected. */
     public boolean connected(int v1, int v2) {
-        return this.tree[v1] == this.tree[v2];
+        int ancestor1 = find(v1);
+        int ancestor2 = find(v2);
+        return ancestor1 == ancestor2;
     }
 
     /* Connects two elements v1 and v2 together. v1 and v2 can be any valid 
@@ -80,10 +82,10 @@ public class UnionFind {
        */
     public int find(int vertex) {
         int ancestor = tree[vertex]; // ancestor == root which are identified with negative number
-        int guardian = items[ancestor];
-        while(ancestor > 0){
-            ancestor = parent(ancestor);
+        int guardian = items[vertex];
+        while(ancestor >= 0){
             guardian = items[ancestor];
+            ancestor = parent(ancestor);
         }
         return guardian;
     }
