@@ -1,3 +1,10 @@
+/**
+ * Invariants:
+ * elements are hidden within the items list
+ * tree contains
+ */
+
+
 public class UnionFind {
 
     int[] items;
@@ -38,11 +45,12 @@ public class UnionFind {
     /* Returns the parent of v1. If v1 is the root of a tree, returns the
        negative size of the tree for which v1 is the root. */
     public int parent(int v1) {
-        int guadian = tree[v1];
-        if(guadian < 0){
-            return -treesize[guadian];
+        int guardianIndex = tree[v1]; // if guardian index is negative then v1 is a root
+        if(guardianIndex < 0){
+            return -treesize[guardianIndex];
         }
-        return guadian;
+        int guardian = items[guardianIndex];
+        return guardian;
     }
 
     /* Returns true if nodes v1 and v2 are connected. */
