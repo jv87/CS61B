@@ -1,3 +1,10 @@
+/**
+ * Invariants:
+ * elements are hidden within the items list
+ * tree contains
+ */
+
+
 public class UnionFind {
 
     int[] items;
@@ -38,16 +45,19 @@ public class UnionFind {
     /* Returns the parent of v1. If v1 is the root of a tree, returns the
        negative size of the tree for which v1 is the root. */
     public int parent(int v1) {
-        int guadian = tree[v1];
-        if(guadian < 0){
-            return -treesize[guadian];
+        int guardianIndex = tree[v1]; // if guardian index is negative then v1 is a root
+        if(guardianIndex < 0){
+            return -treesize[v1];
         }
-        return guadian;
+        int guardian = items[guardianIndex];
+        return guardian;
     }
 
     /* Returns true if nodes v1 and v2 are connected. */
     public boolean connected(int v1, int v2) {
-        return this.tree[v1] == this.tree[v2];
+        int ancestor1 = find(v1);
+        int ancestor2 = find(v2);
+        return ancestor1 == ancestor2;
     }
 
     /* Connects two elements v1 and v2 together. v1 and v2 can be any valid 
@@ -56,8 +66,7 @@ public class UnionFind {
        vertex with itself or vertices that are already connected should not 
        change the sets but may alter the internal structure of the data. */
     public void union(int v1, int v2) {
-        // simply connect two parents to one parent
-
+        tree[v2] = v1;
     }
 
     /* Returns the root of the set V belongs to. Path-compression is employed
@@ -73,10 +82,10 @@ public class UnionFind {
        */
     public int find(int vertex) {
         int ancestor = tree[vertex]; // ancestor == root which are identified with negative number
-        int guardian = items[ancestor];
-        while(ancestor > 0){
-            ancestor = parent(ancestor);
+        int guardian = items[vertex];
+        while(ancestor >= 0){
             guardian = items[ancestor];
+            ancestor = parent(ancestor);
         }
         return guardian;
     }

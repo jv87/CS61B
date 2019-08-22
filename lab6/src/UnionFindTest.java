@@ -43,20 +43,48 @@ public class UnionFindTest {
     }
     @Test
     public void findTest(){
-        //TODO not complete just started
+        //TODO needs more test
         UnionFind set = new UnionFind(10);
-        int firstChild = 0;
-        int parent = set.find(3);
-    }
-    @Test
-    public void parentTest(){
-        UnionFind set = new UnionFind(10);
-        int expAnces1 = 0;
+        int expAncestor1 = 0;
         set.union(0,1);
         set.union(1,2);
         set.union(2,3);
-        int actAnces1 = set.parent(1);
-        Assert.assertEquals(expAnces1,actAnces1);
+        int actAncestor1 = set.find(3);
+
+        Assert.assertEquals(expAncestor1,actAncestor1);
+
+    }
+    @Test
+    public void parentTest(){
+        //TODO: add more test
+        UnionFind set = new UnionFind(10);
+        int expParent1 = 0;
+        int expParent2 = 1;
+        set.union(0,1); // parent is 0
+        set.union(1,2); // parent is 1
+        set.union(0,3); // parent is 0
+
+        int actParent1 = set.parent(1);
+        int actParent2 = set.parent(2);
+        Assert.assertEquals(expParent1, actParent1);
+        Assert.assertEquals(expParent2,actParent2);
+
+        // 1 and 3 are direct descendants of 0
+        actParent1 = set.parent(3);
+        Assert.assertEquals(expParent1,actParent1);
+    }
+
+    @Test
+    public void unionTest(){
+        //TODO: add more test
+        UnionFind set = new UnionFind(10);
+        boolean related = set.connected(0,1); // should be false at first
+        Assert.assertFalse(related);
+        // creating a child
+        set.union(0,1);
+        related = set.connected(0,1);
+        Assert.assertTrue(related);
+
 
     }
 
