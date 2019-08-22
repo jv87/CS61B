@@ -43,10 +43,15 @@ public class UnionFindTest {
     }
     @Test
     public void findTest(){
-        //TODO still need to complete this test
+        //TODO needs more test
         UnionFind set = new UnionFind(10);
-        int firstChild = 0;
-        int parent = set.find(5);
+        int expAncestor1 = 0;
+        set.union(0,1);
+        set.union(1,2);
+        set.union(2,3);
+        int actAncestor1 = set.find(3);
+
+        Assert.assertEquals(expAncestor1,actAncestor1);
 
     }
     @Test
