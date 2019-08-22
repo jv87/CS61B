@@ -43,10 +43,30 @@ public class UnionFindTest {
     }
     @Test
     public void findTest(){
+        //TODO still need to complete this test
         UnionFind set = new UnionFind(10);
         int firstChild = 0;
-        int parent = set.find();
+        int parent = set.find(5);
 
     }
+    @Test
+    public void parentTest(){
+        UnionFind set = new UnionFind(10);
+        int expParent1 = 0;
+        int expParent2 = 1;
+        set.union(0,1); // parent is 0
+        set.union(1,2); // parent is 1
+        set.union(0,3); // parent is 0
+
+        int actParent1 = set.parent(1);
+        int actParent2 = set.parent(2);
+        Assert.assertEquals(expParent1, actParent1);
+        Assert.assertEquals(expParent2,actParent2);
+
+        // 1 and 3 are direct descendants of 0
+        actParent1 = set.parent(3);
+        Assert.assertEquals(expParent1,actParent1);
+    }
+
 
 }
