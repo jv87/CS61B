@@ -73,5 +73,13 @@ public class UnionFindTest {
         Assert.assertEquals(expParent1,actParent1);
     }
 
+    @Test
+    public void unionTest(){
+        UnionFind set = new UnionFind(10);
+        int familySize1 = set.sizeOf(0);
+
+
+    }
+
 
 }
