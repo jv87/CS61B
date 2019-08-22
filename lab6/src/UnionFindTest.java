@@ -56,6 +56,7 @@ public class UnionFindTest {
     }
     @Test
     public void parentTest(){
+        //TODO: add more test
         UnionFind set = new UnionFind(10);
         int expParent1 = 0;
         int expParent2 = 1;
@@ -75,6 +76,7 @@ public class UnionFindTest {
 
     @Test
     public void unionTest(){
+        //TODO: add more test
         UnionFind set = new UnionFind(10);
         boolean related = set.connected(0,1); // should be false at first
         Assert.assertFalse(related);
