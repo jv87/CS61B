@@ -56,7 +56,7 @@ public class UnionFindTest {
     public void findTest(){
         //TODO needs more test
         UnionFind set = new UnionFind(10);
-        int expAncestor1 = 0;
+        int expAncestor1 = 1;
         set.union(0,1);
         set.union(1,2);
         set.union(2,3);

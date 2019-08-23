@@ -76,11 +76,11 @@ public class UnionFind {
             // if the ones family size is bigger than twos, then two family becomes a decendant of ones
             if(p1 < p2){
                 tree[v2] = v1; // v1 becomes a parent
-                tree[v1] -= 1;
+                tree[v1] -= 1; // root
             }
             // if two has the bigger family, then ones family become decendants of two
             if(p2 <= p1 ){
-                tree[v1] = v2;
+                tree[v1] = v2; //v2 becomes the parent
                 tree[v2] -= 1;
             }
 
