@@ -88,7 +88,7 @@ public class UnionFind {
             guardian = items[ancestor];
             ancestor = parent(ancestor);
         }
-        ancestor -=1;
+        tree[guardian] -=1;
         return guardian;
     }
 
