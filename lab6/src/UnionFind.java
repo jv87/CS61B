@@ -48,7 +48,7 @@ public class UnionFind {
     public int parent(int v1) {
         int guardianIndex = tree[v1]; // if guardian index is negative then v1 is a root
         if(guardianIndex < 0){
-            return treesize[v1];
+            return guardianIndex;
         }
         int guardian = items[guardianIndex];
         return guardian;
@@ -79,7 +79,7 @@ public class UnionFind {
                 tree[v1] -= 1;
             }
             // if two has the bigger family, then ones family become decendants of two
-            if(p2 < p1 ){
+            if(p2 <= p1 ){
                 tree[v1] = v2;
                 tree[v2] -= 1;
             }
