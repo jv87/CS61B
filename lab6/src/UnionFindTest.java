@@ -78,12 +78,32 @@ public class UnionFindTest {
     public void unionTest(){
         //TODO: add more test
         UnionFind set = new UnionFind(10);
+
         boolean related = set.connected(0,1); // should be false at first
+        int expFamsize = 1;
+        int actFamSize = set.sizeOf(0);
         Assert.assertFalse(related);
+        Assert.assertEquals(expFamsize, actFamSize);
+
         // creating a child
         set.union(0,1);
+        expFamsize += 1;
+        actFamSize = set.sizeOf(0);
         related = set.connected(0,1);
         Assert.assertTrue(related);
+        Assert.assertEquals(expFamsize,actFamSize);
+
+        // testing family larger than 2
+        set.union(1,2);
+        expFamsize += 1;
+        actFamSize = set.sizeOf(0);
+        related = set.connected(0,2);
+        Assert.assertTrue(related);
+        Assert.assertEquals(expFamsize,actFamSize);
+
+
+
+
 
 
     }

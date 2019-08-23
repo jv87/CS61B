@@ -38,8 +38,7 @@ public class UnionFind {
 
     /* Returns the size of the set v1 belongs to. */
     public int sizeOf(int v1) {
-        // TODO
-        return -1;
+        return treesize[v1];
     }
 
     /* Returns the parent of v1. If v1 is the root of a tree, returns the
@@ -67,6 +66,8 @@ public class UnionFind {
        change the sets but may alter the internal structure of the data. */
     public void union(int v1, int v2) {
         tree[v2] = v1;
+        treesize[v1] += treesize[v2];
+        treesize[v2] = treesize[v1];
     }
 
     /* Returns the root of the set V belongs to. Path-compression is employed
