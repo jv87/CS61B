@@ -22,6 +22,17 @@ public class UnionFindTest {
         }
     }
     @Test
+    public void unionTest(){
+        //TODO: add more test
+        UnionFind set = new UnionFind(10);
+        boolean related = set.connected(0,1); // should be false at first
+        Assert.assertFalse(related);
+        // creating a child
+        set.union(0,1);
+        related = set.connected(0,1);
+        Assert.assertTrue(related);
+    }
+    @Test
     public void ConnectedTest(){
         // Initially nothing should be connected
         UnionFind set = new UnionFind(10);
@@ -74,19 +85,6 @@ public class UnionFindTest {
         Assert.assertEquals(expParent1,actParent1);
     }
 
-    @Test
-    public void unionTest(){
-        //TODO: add more test
-        UnionFind set = new UnionFind(10);
-        boolean related = set.connected(0,1); // should be false at first
-        Assert.assertFalse(related);
-        // creating a child
-        set.union(0,1);
-        related = set.connected(0,1);
-        Assert.assertTrue(related);
-
-
-    }
     @Test
     public void sizeOfTest(){
         UnionFind set = new UnionFind(10);

@@ -48,7 +48,7 @@ public class UnionFind {
     public int parent(int v1) {
         int guardianIndex = tree[v1]; // if guardian index is negative then v1 is a root
         if(guardianIndex < 0){
-            return -treesize[v1];
+            return treesize[v1];
         }
         int guardian = items[guardianIndex];
         return guardian;
@@ -67,7 +67,25 @@ public class UnionFind {
        vertex with itself or vertices that are already connected should not 
        change the sets but may alter the internal structure of the data. */
     public void union(int v1, int v2) {
-        tree[v2] = v1;
+        int ancestor1 = find(v1);
+        int ancestor2 = find(v2);
+
+        if (ancestor1 != ancestor2){
+            int p1 = parent(ancestor1);
+            int p2 = parent(ancestor2);
+            // if the ones family size is bigger than twos, then two family becomes a decendant of ones
+            if(p1 < p2){
+                tree[v2] = v1; // v1 becomes a parent
+                tree[v1] -= 1;
+            }
+            // if two has the bigger family, then ones family become decendants of two
+            if(p2 < p1 ){
+                tree[v1] = v2;
+                tree[v2] -= 1;
+            }
+
+        }
+
     }
 
     /* Returns the root of the set V belongs to. Path-compression is employed
@@ -88,7 +106,7 @@ public class UnionFind {
             guardian = items[ancestor];
             ancestor = parent(ancestor);
         }
-        tree[guardian] -=1;
+
         return guardian;
     }
 
