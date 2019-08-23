@@ -25,7 +25,7 @@ public class UnionFind {
         this.treesize = new int[n];
         for (int i = 0; i < n; i++){
             items[i] = i;
-            tree[i] = -(i+1);
+            tree[i] = -1;
             treesize[i] = 1;
         }
 
@@ -38,7 +38,9 @@ public class UnionFind {
 
     /* Returns the size of the set v1 belongs to. */
     public int sizeOf(int v1) {
-        return treesize[v1];
+        // TODO
+        int ancestor = find(v1);
+        return -tree[ancestor];
     }
 
     /* Returns the parent of v1. If v1 is the root of a tree, returns the
@@ -46,7 +48,7 @@ public class UnionFind {
     public int parent(int v1) {
         int guardianIndex = tree[v1]; // if guardian index is negative then v1 is a root
         if(guardianIndex < 0){
-            return -treesize[v1];
+            return guardianIndex;
         }
         int guardian = items[guardianIndex];
         return guardian;
@@ -65,9 +67,25 @@ public class UnionFind {
        vertex with itself or vertices that are already connected should not 
        change the sets but may alter the internal structure of the data. */
     public void union(int v1, int v2) {
-        tree[v2] = v1;
-        treesize[v1] += treesize[v2];
-        treesize[v2] = treesize[v1];
+        int ancestor1 = find(v1);
+        int ancestor2 = find(v2);
+
+        if (ancestor1 != ancestor2){
+            int p1 = parent(ancestor1);
+            int p2 = parent(ancestor2);
+            // if the ones family size is bigger than twos, then two family becomes a decendant of ones
+            if(p1 < p2){
+                tree[v2] = v1; // v1 becomes a parent
+                tree[v1] -= 1;
+            }
+            // if two has the bigger family, then ones family become decendants of two
+            if(p2 <= p1 ){
+                tree[v1] = v2;
+                tree[v2] -= 1;
+            }
+
+        }
+
     }
 
     /* Returns the root of the set V belongs to. Path-compression is employed
@@ -88,6 +106,7 @@ public class UnionFind {
             guardian = items[ancestor];
             ancestor = parent(ancestor);
         }
+
         return guardian;
     }
 

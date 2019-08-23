@@ -12,7 +12,7 @@ public class UnionFindTest {
             int actElem = set.items[i];
             Assert.assertEquals(expElem, actElem);
 
-            int expParent = -(i+1);
+            int expParent = -1;
             int actParent = set.tree[i];
             Assert.assertEquals(expParent, actParent);
 
@@ -20,6 +20,17 @@ public class UnionFindTest {
             int actTreesize = set.treesize[i];
             Assert.assertEquals(expTreeSize, actTreesize);
         }
+    }
+    @Test
+    public void unionTest(){
+        //TODO: add more test
+        UnionFind set = new UnionFind(10);
+        boolean related = set.connected(0,1); // should be false at first
+        Assert.assertFalse(related);
+        // creating a child
+        set.union(0,1);
+        related = set.connected(0,1);
+        Assert.assertTrue(related);
     }
     @Test
     public void ConnectedTest(){
@@ -75,9 +86,9 @@ public class UnionFindTest {
     }
 
     @Test
-    public void unionTest(){
-        //TODO: add more test
+    public void sizeOfTest(){
         UnionFind set = new UnionFind(10);
+
 
         boolean related = set.connected(0,1); // should be false at first
         int expFamsize = 1;
@@ -106,6 +117,17 @@ public class UnionFindTest {
 
 
 
+        int expSize = 1;
+        int actSize = set.sizeOf(2);
+        Assert.assertEquals(expSize,actSize);
+
+
+        //increase family tree
+        set.union(0,1);
+        set.union(1,2);
+        expSize = 3;
+        actSize = set.sizeOf(2);
+        Assert.assertEquals(expSize,actSize);
     }
 
 
