@@ -40,7 +40,7 @@ public class UnionFind {
     public int sizeOf(int v1) {
         // TODO
         int ancestor = find(v1);
-        return treesize[ancestor];
+        return -treesize[ancestor];
     }
 
     /* Returns the parent of v1. If v1 is the root of a tree, returns the

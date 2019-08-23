@@ -87,6 +87,20 @@ public class UnionFindTest {
 
 
     }
+    @Test
+    public void sizeOfTest(){
+        UnionFind set = new UnionFind(10);
+        int expSize = 1;
+        int actSize = set.sizeOf(2);
+        Assert.assertEquals(expSize,actSize);
+
+        //increase family tree
+        set.union(0,1);
+        set.union(1,2);
+        expSize = 3;
+        actSize = set.sizeOf(2);
+        Assert.assertEquals(expSize,actSize);
+    }
 
 
 }
