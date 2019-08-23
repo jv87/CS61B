@@ -25,7 +25,7 @@ public class UnionFind {
         this.treesize = new int[n];
         for (int i = 0; i < n; i++){
             items[i] = i;
-            tree[i] = -(i+1);
+            tree[i] = -1;
             treesize[i] = 1;
         }
 

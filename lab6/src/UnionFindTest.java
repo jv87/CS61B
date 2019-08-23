@@ -12,7 +12,7 @@ public class UnionFindTest {
             int actElem = set.items[i];
             Assert.assertEquals(expElem, actElem);
 
-            int expParent = -(i+1);
+            int expParent = -1;
             int actParent = set.tree[i];
             Assert.assertEquals(expParent, actParent);
 
